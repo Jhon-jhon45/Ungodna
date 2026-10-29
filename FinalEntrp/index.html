@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palitaw ni Rene | Homemade Filipino Palitaw</title>
+<meta name="description" content="Order homemade Filipino palitaw for pickup or delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav glass" id="top">
+  <a class="brand" href="#home" aria-label="Home">
+    <span class="logo" aria-hidden="true">P</span>
+    <span class="brand-name" data-biz="name">Palitaw ni rene</span>
+  </a>
+  <nav id="menu" class="menu" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#products">Our Products</a>
+    <a href="#team">Meet the Team</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="btn btn-small" id="navOrder" type="button">Order Now</button>
+    <button class="cart-btn" id="cartOpen" type="button" aria-label="Open cart">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 7H6"/></svg>
+      <span class="badge" id="cartCount">0</span>
+    </button>
+    <button class="burger" id="burger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-text glass reveal">
+    <h1>Taste our palitaw balls, Love Every Bite.</h1>
+    <p>Homemade palitaw balls, made with care and love for every bite. Choose your flavors, build your order, and send it to us in a few taps.</p>
+    <div class="hero-btns">
+      <button class="btn" type="button" data-go="order">Order Now</button>
+      <a class="btn btn-ghost" href="#products">Explore Our Products</a>
+    </div>
+    <ul class="chips">
+      <li>Freshly Made</li>
+      <li>Made with Love</li>
+    </ul>
+  </div>
+  <figure class="hero-img glass reveal">
+    <div class="ph"><img src="image/Ballsnim.jpg" alt="Plate of palitaw rolled in coconut and sesame seeds" loading="eager"><span class="ph-label">Hero photo placeholder<br><small>images/hero-palitaw.jpg</small></span></div>
+  </figure>
+</section>
+
+<section class="section" id="products">
+  <div class="section-head reveal"><h2>Our Products</h2><p>Four palitaw choices. Pick a quantity and add it to your cart.</p></div>
+  <div class="grid products" id="productGrid"></div>
+  <p class="note reveal" id="priceNote" hidden><code></code></p>
+</section>
+
+<section class="section" id="how">
+  <div class="section-head reveal"><h2>How to Order</h2></div>
+  <ol class="steps">
+    <li class="glass reveal"><span class="step-n">1</span><h3>Choose your flavor</h3><p>Browse our four palitaw options.</p></li>
+    <li class="glass reveal"><span class="step-n">2</span><h3>Add your quantity</h3><p>Set how many you want and add it to your cart.</p></li>
+    <li class="glass reveal"><span class="step-n">3</span><h3>Send your order</h3><p>Enter your details and send the order through our ordering channel.</p></li>
+  </ol>
+  <div class="center"><button class="btn" type="button" data-go="products">Start Your Order</button></div>
+</section>
+
+<section class="section" id="team">
+  <div class="section-head reveal"><h2>Meet the Team</h2><p>The people behind every batch.</p></div>
+  <div class="grid team" id="teamGrid"></div>
+
+  <div class="section-head appendices-head reveal">
+    <h2>Appendices</h2>
+  </div>
+
+  <div class="appendices-gallery reveal" aria-label="Appendices gallery">
+    <figure class="appendix-item">
+      <img src="appendices/15c4b3fc-6575-4abd-b6a7-8836b42c0687.jpg" alt="Appendix image 1">
+    </figure>
+    <figure class="appendix-item">
+      <img src="appendices/24cf6283-5093-45c4-9836-381405de9773.jpg" alt="Appendix image 2">
+    </figure>
+    <figure class="appendix-item">
+      <img src="appendices/9b913631-0ae4-447b-86d1-1e49e73f39c0.jpg" alt="Appendix image 3">
+    </figure>
+    <figure class="appendix-item">
+      <img src="appendices/dc90f57e-1cdc-49a2-96df-2fcfe886af76.jpg" alt="Appendix image 4">
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-head reveal"><h2>About Us</h2></div>
+  <div class="grid about">
+    <article class="glass reveal" data-about="story"><h3>Our Journey as Student Entrepreneurs</h3><p>
+
+As students selling palitaw, we started our small business to earn experience and learn the value of entrepreneurship. At first, it was challenging to balance our studies and business, but through teamwork, patience, and determination, we continued making and selling delicious palitaw. Every customer who buys our product inspires us to do better. This journey teaches us responsibility, hard work, and how to manage a business. More than earning money, we are proud to share a traditional Filipino delicacy with our customers while pursuing our dreams as students.</p></article>
+    <article class="glass reveal" data-about="love"><h3>Filipino Food and Tradition</h3><p>Palitaw is a traditional Filipino rice cake, boiled until it floats, then rolled in grated coconut, sugar, and sesame seeds. Tell customers what it means to your family.</p></article>
+    <article class="glass reveal" data-about="mission"><h3>Mission</h3><p>Our mission is to provide delicious, affordable, and high-quality palitaw. As student entrepreneurs, we aim to develop our business skills, serve our customers with dedication, and learn the value of teamwork, responsibility, and hard work.</p></article>
+    <article class="glass reveal" data-about="vision"><h3>Vision</h3><p>Our vision is to become a trusted student-led business known for delicious, affordable, and high-quality palitaw. We aspire to grow our small business, satisfy our customers, and proudly share Filipino culture and tradition through our products while gaining valuable entrepreneurial experience.</p></article>
+    <article class="glass reveal wide" data-about="why"><h3>Why Choose Us</h3><p>
+
+Enjoy our delicious, affordable, and freshly made palitaw with unique flavors. Every purchase supports our journey as student entrepreneurs!</p></article>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="section-head reveal"><h2>Contact</h2></div>
+  <div class="contact">
+    <div class="glass reveal info">
+      <dl id="contactList"></dl>
+    </div>
+    <form class="glass reveal" id="contactForm" novalidate>
+      <h3>Send us a message</h3>
+      <label>Name<input name="name" autocomplete="name" required><span class="err"></span></label>
+      <label>Phone or email<input name="contact" autocomplete="email" required><span class="err"></span></label>
+      <label>Message<textarea name="message" rows="4" required></textarea><span class="err"></span></label>
+      <button class="btn" type="submit">Prepare Message</button>
+      <p class="msg" id="contactMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer glass">
+  <p>&copy; <span id="year"></span> <span data-biz="name">Palitaw ni rene</span>. All rights reserved.</p>
+  <a href="#top">Back to top</a>
+</footer>
+
+<div class="appendix-modal" id="appendixModal" hidden aria-modal="true" role="dialog" aria-label="Appendix image preview">
+  <button class="appendix-close" type="button" aria-label="Close image preview">&times;</button>
+  <img id="appendixModalImage" src="" alt="Appendix preview">
+</div>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer glass" id="drawer" aria-label="Shopping cart" aria-hidden="true" tabindex="-1">
+  <div class="drawer-head"><h2>Your Cart</h2><button class="icon-btn" id="cartClose" type="button" aria-label="Close cart">&times;</button></div>
+  <div class="drawer-body">
+    <p class="empty" id="cartEmpty">Your cart is empty. Add a palitaw to get started.</p>
+    <ul class="cart-list" id="cartList"></ul>
+    <p class="total" id="cartTotalRow" hidden>Total <strong id="cartTotal">₱0.00</strong></p>
+
+    <form id="orderForm" novalidate hidden>
+      <h3>Your details</h3>
+      <fieldset class="mode">
+        <legend class="sr">Order type</legend>
+        <label><input type="radio" name="mode" value="Pickup" checked> Pickup</label>
+        <label><input type="radio" name="mode" value="Delivery"> Delivery</label>
+      </fieldset>
+      <label>Full name<input name="name" autocomplete="name" required><span class="err"></span></label>
+      <label>Phone number<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required><span class="err"></span></label>
+      <label id="addrWrap" hidden>Delivery address<textarea name="address" rows="2" autocomplete="street-address"></textarea><span class="err"></span></label>
+      <label>Order notes (optional)<textarea name="notes" rows="2"></textarea></label>
+
+      <h3>Order summary</h3>
+      <pre class="summary" id="summary"></pre>
+      <button class="btn btn-block" type="submit">Place Order</button>
+      <p class="msg" id="orderMsg" role="status"></p>
+      <button class="btn btn-ghost btn-block" type="button" id="copyBtn" hidden>Copy order message</button>
+    </form>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
